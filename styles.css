@@ -222,7 +222,7 @@ background: linear-gradient(to left, #0b2900, #52c234);
 .hero {
     background: #000000;
     background: linear-gradient(to right, #161616, #000000);
-    padding: 210px 0; 
+    padding: 230px 0; 
     /* ORIGINAL PADDING FROM VIDEO IS 200 */
 }
 
@@ -246,8 +246,8 @@ background: linear-gradient(to left, #0b2900, #52c234);
 
 .hero__heading span {
     background: #52c234;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #061700, #52c234);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #0b2900, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to left, #061700, #52c234);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #0b2900, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     background-size: 100%;
     -webkit-background-clip: text;
@@ -259,12 +259,65 @@ background: linear-gradient(to left, #0b2900, #52c234); /* W3C, IE 10+/ Edge, Fi
 .hero__description {
     font-size: 60px;
     background: #52c234;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #041000, #52c234);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #040d00, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-background-size: 100%;
--webkit-background-clip: text;
--moz-background-clip: text;
--webkit-text-fill-color: transparent;
--mo-text-fill-color: transparent;
+    background: -webkit-linear-gradient(to left, #165501, #52c234);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #165501, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -mo-text-fill-color: transparent;
 
+}
+
+
+.highlight {
+    border-bottom: 4px solid  rgb(132, 0, 255);
+}
+
+@media screen and (max-width: 768px) {
+    .hero__heading {
+        font-size: 60px;
+    }
+
+    .hero__description {
+        font-size: 40px;
+    }
+}
+ 
+/* About Section */
+
+.main {
+    background-color: #131313;
+    padding: 10rem 0;;
+    
+}
+
+.main__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 90%;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+
+}
+
+.main__content {
+    color: #fff;
+    width: 100%;
+
+}
+
+.main__content h1 {
+    background-color: #084f22;
+    background-image: linear-gradient(to left, #114101 0%, #52c234 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
